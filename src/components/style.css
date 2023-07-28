@@ -1,0 +1,48 @@
+:root{
+    --dark-blue:#14007a;
+    --blue: #1a009c;
+    --light-blue: rgb(74,225,255);
+    --pink: rgb(255,40,113);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: sans-serif;
+    background-image: linear-gradient(45deg , var(--light-blue), var(--blue));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin: 1rem 0;
+    color: white;
+}
+
+textarea{
+    width: 100%;
+    height: calc(100% - 4rem);
+    background-color: var(--blue);
+    border: none;
+    border-radius: .5rem;
+    color: wheat;
+    padding: 1rem;
+    resize: vertical;
+}
+textarea::-webkit-scrollbar{
+    width: .4rem;  
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: var(--pink);
+    border-radius: .4rem; 
+}
